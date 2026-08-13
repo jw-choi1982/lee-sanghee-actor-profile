@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 const GALLERY_ITEMS = [
+  { src: "/images/hope-rifle.jpg", caption: "<호프> 낙연 스틸" },
   { src: "/images/role-sageuk.jpg", caption: "사극 캐릭터 스틸" },
   { src: "/images/role-chef.jpg", caption: "배역 스틸" },
   { src: "/images/selfie-coral.jpg", caption: "<호프> 촬영 중" },
