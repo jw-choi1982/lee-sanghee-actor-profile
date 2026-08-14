@@ -8,6 +8,9 @@ const GALLERY_ITEMS = [
   { src: "/images/interview.jpg", caption: "인터뷰 컷" },
   { src: "/images/bts-cast.jpg", caption: "동료 배우들과" },
   { src: "/images/bts-hope-crew.jpg", caption: "<호프> 촬영팀과" },
+  { src: "/images/squidgame-still.png", caption: "<오징어 게임> 스틸" },
+  { src: "/images/chaser-still-1.png", caption: "<추격자> 스틸" },
+  { src: "/images/chaser-still-2.png", caption: "<추격자> 스틸" },
 ];
 
 export default function Gallery() {
