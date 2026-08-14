@@ -16,7 +16,7 @@ export default function Profile() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 lg:grid-cols-[320px_1fr]">
         <div className="relative mx-auto aspect-3/4 w-full max-w-xs overflow-hidden rounded-xl lg:mx-0">
           <Image
-            src="/images/profile-main.jpg"
+            src="/images/profile-main.png"
             alt="이상희 프로필 사진"
             fill
             sizes="(min-width: 1024px) 320px, 320px"
