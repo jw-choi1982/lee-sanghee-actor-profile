@@ -1,6 +1,16 @@
 import Image from "next/image";
 
-const GALLERY_ITEMS = [
+type GalleryItem = {
+  src: string;
+  caption: string;
+  // 3:4 칸에 잘리면 안 되는 단체 사진은 전체를 보여주고 빈 공간은 흐린 배경으로 채움
+  fit?: "contain";
+};
+
+const GALLERY_ITEMS: GalleryItem[] = [
+  { src: "/images/shortbox-still-1.jpg", caption: "<숏박스> 출연 스틸" },
+  { src: "/images/shortbox-still-2.jpg", caption: "<숏박스> 출연 스틸" },
+  { src: "/images/hope-cast-wrap.jpg", caption: "<호프> 배우들과", fit: "contain" },
   { src: "/images/hope-rifle.jpg", caption: "<호프> 낙연 스틸" },
   { src: "/images/role-sageuk.jpg", caption: "사극 캐릭터 스틸" },
   { src: "/images/role-chef.jpg", caption: "배역 스틸" },
@@ -24,12 +34,24 @@ export default function Gallery() {
               key={item.src}
               className="group relative aspect-3/4 overflow-hidden rounded-lg"
             >
+              {item.fit === "contain" && (
+                <Image
+                  src={item.src}
+                  alt=""
+                  aria-hidden
+                  fill
+                  sizes="(min-width: 640px) 33vw, 50vw"
+                  className="scale-110 object-cover opacity-60 blur-xl"
+                />
+              )}
               <Image
                 src={item.src}
                 alt={item.caption}
                 fill
                 sizes="(min-width: 640px) 33vw, 50vw"
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                className={`${
+                  item.fit === "contain" ? "object-contain" : "object-cover"
+                } transition-transform duration-300 group-hover:scale-105`}
               />
               <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-3 py-2 text-xs text-white/80">
                 {item.caption}
