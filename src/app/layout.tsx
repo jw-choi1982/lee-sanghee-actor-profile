@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.leesanghee.company"),
   title: "이상희 | Actor Profile",
   description: "배우 이상희의 프로필 및 필모그래피",
 };
