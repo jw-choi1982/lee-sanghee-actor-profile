@@ -13,8 +13,6 @@ const GALLERY_ITEMS: GalleryItem[] = [
   { src: "/images/hope-cast-wrap.jpg", caption: "<호프> 배우들과", fit: "contain" },
   { src: "/images/hope-rifle.jpg", caption: "<호프> 낙연 스틸" },
   { src: "/images/role-sageuk.jpg", caption: "사극 캐릭터 스틸" },
-  { src: "/images/role-chef.jpg", caption: "배역 스틸" },
-  { src: "/images/selfie-coral.jpg", caption: "<호프> 촬영 중" },
   { src: "/images/interview.jpg", caption: "인터뷰 컷" },
   { src: "/images/bts-cast.jpg", caption: "동료 배우들과" },
   { src: "/images/bts-hope-crew.jpg", caption: "<호프> 촬영팀과" },
