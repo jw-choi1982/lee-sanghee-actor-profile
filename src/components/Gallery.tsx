@@ -8,7 +8,6 @@ type GalleryItem = {
 };
 
 const GALLERY_ITEMS: GalleryItem[] = [
-  { src: "/images/shortbox-still-1.jpg", caption: "<숏박스> 출연 스틸" },
   { src: "/images/shortbox-still-2.jpg", caption: "<숏박스> 출연 스틸" },
   { src: "/images/hope-cast-wrap.jpg", caption: "<호프> 배우들과", fit: "contain" },
   { src: "/images/hope-rifle.jpg", caption: "<호프> 낙연 스틸" },
@@ -22,7 +21,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="bg-neutral-950 px-6 py-24">
+    <section id="gallery" className="bg-black px-6 py-24">
       <div className="mx-auto max-w-6xl">
         <h2 className="text-3xl font-bold text-white">비하인드 &amp; 스틸</h2>
 

@@ -6,9 +6,9 @@ import { Menu, X } from "lucide-react";
 const NAV_LINKS = [
   { href: "#hero", label: "홈" },
   { href: "#profile", label: "프로필" },
+  { href: "#contact", label: "문의" },
   { href: "#gallery", label: "갤러리" },
   { href: "#filmography", label: "필모그래피" },
-  { href: "#contact", label: "문의" },
 ];
 
 export default function Navbar() {
