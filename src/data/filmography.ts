@@ -1,4 +1,4 @@
-export type FilmographyCategory = "영화" | "드라마";
+export type FilmographyCategory = "영화" | "드라마" | "웹예능";
 
 export interface FilmographyItem {
   id: string;
@@ -30,4 +30,5 @@ export const filmography: FilmographyItem[] = [
   { id: "m15", title: "마이 파더", role: "박씨", year: 2007, category: "영화", note: "데뷔작·조연" },
   { id: "d4", title: "무빙", role: "건물주", year: 2023, category: "드라마", note: "Disney+" },
   { id: "d5", title: "옥씨부인전", role: "개죽이", year: 2024, category: "드라마", note: "JTBC" },
+  { id: "w1", title: "숏박스", role: "출연", year: 2025, category: "웹예능", note: "YouTube" },
 ];
